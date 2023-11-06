@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Sanchez:400italic,400);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Sanchez', serif;
+    font-size: 12px;
+    background-color: #040e27;
+    color: #fff;
+    margin: 0 20px;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container{
+    max-width: 768px;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+blockquote{
+    margin-top: 25px;
+}
+.quote{
+    position: relative;
+    font-size: 20px;
+    line-height: 1.7em;
+    word-break: break-word;
+}
+.quote footer{
+    font-size: 0.6em;
+    font-weight: 700;
+    color: #d3d3cf;
+    text-align: right;
+}
+.quote footer:before{
+    content: '\2015';
+}
+.quote:after{
+    content: '\201d';
+    position: absolute;
+    top: 0.28em;
+    right: 0;
+    font-size: 5em;
+    font-style: italic;
+    z-index: -1;
+}
+
+
+.loader{
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+}
