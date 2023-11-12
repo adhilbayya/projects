@@ -22,6 +22,7 @@ body {
   max-width: 30%;
   min-height: 75%;
   background-color: #171b22;
+  border: 1px solid black;
   border-radius: 5px;
   color: azure;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -78,22 +79,16 @@ body {
   font-size: 10px;
 }
 .footer-section {
-  background-color: #0d0f12;
+  background-color: #303948;
   padding: 10px;
+  border: 1px solid black;
   border-radius: 0 0 5px 5px;
 }
 .footer-social {
   display: flex;
   justify-content: space-around;
 }
-.twitter-logo {
-  background-color: #fff;
-  border-radius: 10%;
-}
-.github-logo {
-  background-color: #fff;
-  border-radius: 50%;
-}
+
 @media screen and (max-width: 630px) {
   .App {
     min-width: 50%;
