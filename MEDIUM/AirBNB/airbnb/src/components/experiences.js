@@ -3,7 +3,7 @@ export default function ExperienceSection(props) {
   return (
     <div className="experience-section">
       <div className="swimmer-section">
-        <img src={props.img} className="picture-section"></img>
+        <img src={`../img/${props.img}`} className="picture-section"></img>
 
         <p className="card-rating">
           <img src={Star} className="star-pic"></img>
