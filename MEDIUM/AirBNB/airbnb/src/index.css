@@ -32,7 +32,23 @@ body {
 .hero-section {
   margin: 30px;
 }
-
 .experience-section {
   margin: 15px;
+  font-size: 12px;
+}
+.picture-section {
+  width: 176px;
+  height: 235px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.card-rating {
+  font-size: 12px;
+}
+.bold {
+  font-weight: 600;
+}
+.star-pic {
+  padding-right: 3px;
+  width: 14px;
 }

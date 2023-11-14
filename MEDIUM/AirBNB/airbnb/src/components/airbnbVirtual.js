@@ -7,8 +7,8 @@ export default function MainContent() {
       <div className="hero-section">
         <h1 className="hero-header">Online Experiences</h1>
         <p className="hero-text">
-          Join interactive activities led by <br></br> one-of-a-kind hosts-all
-          without leaving <br></br>home.
+          Join interactive activities led by one-of-a-kind hosts-all without
+          leaving home.
         </p>
       </div>
     </div>
