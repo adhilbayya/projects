@@ -15,7 +15,7 @@ body {
 }
 
 .airbnb-logo {
-  width: 82px;
+  width: 150px;
   padding: 5px;
   margin-left: 15px;
 }
@@ -32,12 +32,25 @@ body {
 .hero-section {
   margin: 30px;
 }
+.card-section {
+  display: flex;
+  padding: 20px;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .experience-section {
+  flex: 0 0 auto;
+  width: 175px;
   margin: 15px;
   font-size: 12px;
 }
 .picture-section {
-  width: 176px;
+  width: 100%;
   height: 235px;
   object-fit: cover;
   border-radius: 9px;
