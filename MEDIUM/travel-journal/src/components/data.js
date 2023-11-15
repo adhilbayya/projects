@@ -8,6 +8,6 @@ export default [
     endDate: "21.08.23",
     description:
       "Theqwdhefh ofheoa giahe qoigh eougheovhaobebqowrupov  wqorgh oer r rw qrh ouvhoaVHBAOurhOVH",
-    imgURL: "IMG_2477.JPG",
+    imgURL: "IMG_2558.HEIC",
   },
 ];
