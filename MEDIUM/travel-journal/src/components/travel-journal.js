@@ -8,12 +8,12 @@ export default function TravelJournal(props) {
         <a className="google-map-link" href={props.item.googleMapLink}>
           View on Google map
         </a>
+        <h2 className="title">{props.item.title}</h2>
+        <b>
+          {props.item.startDate} - {props.item.endDate}
+        </b>
+        <p className="description">{props.item.description}</p>
       </div>
-      <h2 className="title">{props.item.title}</h2>
-      <b>
-        {props.item.startDate} - {props.item.endDate}
-      </b>
-      <p className="description">{props.item.description}</p>
     </div>
   );
 }

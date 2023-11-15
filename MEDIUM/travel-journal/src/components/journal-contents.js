@@ -5,5 +5,5 @@ export default function Content() {
   let journalContent = data.map((content) => {
     return <TravelJournal id={content.id} item={content} />;
   });
-  return { journalContent };
+  return <div className="card-section">{journalContent}</div>;
 }
