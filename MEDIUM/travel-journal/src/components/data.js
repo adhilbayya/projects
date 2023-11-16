@@ -4,10 +4,10 @@ export default [
     title: "Pondicherry",
     location: "Tamilnadu, India",
     googleMapLink: "",
-    startDate: "18.08.23",
-    endDate: "21.08.23",
+    startDate: "Sep 18 2023",
+    endDate: "Sep 21 2023",
     description:
-      "Theqwdhefh ofheoa giahe qoigh eougheovhaobebqowrupov  wqorgh oer r rw qrh ouvhoaVHBAOurhOVH",
-    imgURL: "IMG_2558.HEIC",
+      "Puducherry, the capital of the Territory was once the original headquarters of the French in India, is situated on the Coromandel Coast of the Bay of Bengal and is about 135 kms. from Chennai Airport. It is bounded on the east by the Bay of Bengal and on the three sides by Tamil Nadu. About 130 kms.",
+    imgURL: "groupPic.png",
   },
 ];

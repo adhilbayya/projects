@@ -13,15 +13,63 @@ body {
 }
 .travel-image {
   width: 200px;
+  height: 250px;
   border-radius: 9px;
   margin-right: 15px;
   object-fit: cover;
+  border: 2px solid black;
 }
 .content-header {
   display: flex;
   flex-direction: column;
 }
 .google-map-link {
+  margin-left: 18px;
+  text-decoration: none;
+}
+.bottom-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+.title {
+  margin-bottom: 20px;
+}
+.description {
+  --max-lines: 3;
+  --line-height: 1.4;
+
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  overflow: hidden;
+  position: relative;
+}
+.description.description:has(+ .expand-button:not(:checked)):before {
+  content: "";
+  position: absolute;
+  height: calc(1em * 1.4);
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, white);
+}
+.expand-button {
+  appearance: none;
+  border: 1px solid black;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 85px;
+  text-align: center;
+}
+.expand-button:hover {
+  background-color: #ccc;
+}
+.expand-button::before {
+  content: "Read More";
+}
+.expand-button:checked::before {
+  content: "Read less";
+}
+.description:has(+ .expand-button:checked) {
+  max-height: none;
 }
