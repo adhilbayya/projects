@@ -7,7 +7,7 @@ export default function TravelJournal(props) {
           <img
             className="location-logo"
             src="../img/locationlogo.png"
-            width="13px"
+            width="10px"
           ></img>
           {props.item.location}
           <a className="google-map-link" href={props.item.googleMapLink}>
@@ -16,7 +16,7 @@ export default function TravelJournal(props) {
         </p>
         <h2 className="title">{props.item.title}</h2>
         <div className="bottom-section">
-          <b>
+          <b className="date">
             {props.item.startDate} - {props.item.endDate}
           </b>
           <p className="description">{props.item.description}</p>

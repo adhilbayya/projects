@@ -11,13 +11,21 @@ body {
   display: flex;
   margin: 20px;
 }
+.head-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0px 2.9825618267059326px 7.456404209136963px rgba(0, 0, 0, 0.267);
+  background-color: papayawhip;
+}
 .travel-image {
   width: 200px;
   height: 250px;
   border-radius: 9px;
   margin-right: 15px;
   object-fit: cover;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 .content-header {
   display: flex;
@@ -72,4 +80,11 @@ body {
 }
 .description:has(+ .expand-button:checked) {
   max-height: none;
+}
+.date {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.location {
+  font-size: 13px;
 }
