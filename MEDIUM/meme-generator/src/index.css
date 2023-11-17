@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Inter&family=Young+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Barlow", sans-serif;
+}
+.header {
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.meme-logo {
+  height: 100%;
+  margin-right: 6px;
+}
+.header-title {
+  font-size: 35px;
+  color: #fff;
+}
+main {
+  padding: 36px;
+}
+.input-area {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  height: 30px;
+}
+.button {
+  grid-column: 1/-1;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px black;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.first-input {
+  border-radius: 5px;
+  border: solid 1px #d5d4d8;
+  text-indent: 5px;
+  color: #d5d4d8;
+}
+.second-input {
+  border-radius: 5px;
+  border: solid 1px #d5d4d8;
+  text-indent: 5px;
+  color: #d5d4d8;
+}
