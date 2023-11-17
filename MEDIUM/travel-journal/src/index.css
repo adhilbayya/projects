@@ -42,6 +42,8 @@ body {
 .title {
   margin-bottom: 20px;
 }
+
+/* Drop down button*/
 .description {
   --max-lines: 3;
   --line-height: 1.4;
@@ -81,6 +83,8 @@ body {
 .description:has(+ .expand-button:checked) {
   max-height: none;
 }
+/* Drop down button*/
+
 .date {
   margin-bottom: 10px;
   font-size: 12px;
