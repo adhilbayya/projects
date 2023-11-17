@@ -9,10 +9,13 @@ export default function TravelJournal(props) {
             src="../img/locationlogo.png"
             width="10px"
           ></img>
+
           {props.item.location}
-          <a className="google-map-link" href={props.item.googleMapLink}>
-            View on Google map
-          </a>
+          <span className="location-title">
+            <a className="google-map-link" href={props.item.googleMapLink}>
+              View on Google map
+            </a>
+          </span>
         </p>
         <h2 className="title">{props.item.title}</h2>
         <div className="bottom-section">

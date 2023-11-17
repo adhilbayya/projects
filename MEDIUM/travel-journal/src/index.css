@@ -88,3 +88,12 @@ body {
 .location {
   font-size: 13px;
 }
+@media screen and (max-width: 520px) {
+  .location-title {
+    display: inline-block;
+    width: 100%;
+  }
+  .google-map-link {
+    margin-left: 0;
+  }
+}
