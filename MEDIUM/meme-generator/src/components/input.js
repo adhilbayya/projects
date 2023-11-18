@@ -2,18 +2,28 @@ import memesData from "./memesData";
 import React from "react";
 
 export default function InputArea() {
-  let [memeImage, setMemeImg] = React.useState("");
+  let [meme, setMeme] = React.useState({
+    toptext: "",
+    bottomtext: "",
+    randomImg: "https://i.imgflip.com/30b1gx.jpg",
+  });
+
+  let [allMemeImage, setMemeImg] = React.useState(memesData);
+
   function GenerateMeme() {
-    let meme = memesData.data.memes;
-    let randomMeme = Math.floor(Math.random() * meme.length);
-    let url = meme[randomMeme].url;
-    setMemeImg(url);
+    let memeArr = allMemeImage.data.memes;
+    let randomMeme = Math.floor(Math.random() * memeArr.length);
+    let url = memeArr[randomMeme].url;
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      randomImg: url,
+    }));
   }
   return (
     <main>
       <div className="input-area">
         <input type="text" className="form-input" value="Top line"></input>
-        <input className="sform-input" type="text" value="Bottom line"></input>
+        <input className="form-input" type="text" value="Bottom line"></input>
         <input
           type="button"
           className="button"
@@ -21,7 +31,7 @@ export default function InputArea() {
           onClick={GenerateMeme}
         ></input>
       </div>
-      <img src={memeImage} className="meme-img"></img>
+      <img src={meme.randomImg} className="meme-img" alt="name"></img>
     </main>
   );
 }

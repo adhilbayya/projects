@@ -31,12 +31,10 @@ main {
 }
 .button {
   grid-column: 1/-1;
-  height: 40px;
   border-radius: 5px;
   border: solid 1px black;
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   color: #fff;
-  text-align: center;
   font-size: 16px;
   font-weight: 700;
 }
