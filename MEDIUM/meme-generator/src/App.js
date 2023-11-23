@@ -5,7 +5,8 @@ import RoughBox from "./components/rough/rough-box";
 function App() {
   return (
     <div className="App">
-      <RoughBox />
+      <Header />
+      <InputArea />
     </div>
   );
 }

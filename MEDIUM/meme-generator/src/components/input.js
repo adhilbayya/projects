@@ -8,6 +8,14 @@ export default function InputArea() {
     randomImg: "https://i.imgflip.com/30b1gx.jpg",
   });
 
+  function changeForm(event) {
+    let { name, value } = event.target;
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      [name]: value,
+    }));
+  }
+
   let [allMemeImage, setMemeImg] = React.useState(memesData);
 
   function GenerateMeme() {
@@ -22,8 +30,20 @@ export default function InputArea() {
   return (
     <main>
       <div className="input-area">
-        <input type="text" className="form-input" value="Top line"></input>
-        <input className="form-input" type="text" value="Bottom line"></input>
+        <input
+          type="text"
+          className="form-input"
+          value={meme.toptext}
+          name="toptext"
+          onChange={changeForm}
+        />
+        <input
+          className="form-input"
+          type="text"
+          value={meme.bottomtext}
+          name="bottomtext"
+          onChange={changeForm}
+        />
         <input
           type="button"
           className="button"
@@ -31,7 +51,11 @@ export default function InputArea() {
           onClick={GenerateMeme}
         ></input>
       </div>
-      <img src={meme.randomImg} className="meme-img" alt="name"></img>
+      <div className="meme">
+        <img src={meme.randomImg} className="meme-img" alt="name"></img>
+        <h2 className="meme--text top">{meme.toptext}</h2>
+        <h2 className="meme--text bottom">{meme.bottomtext}</h2>
+      </div>
     </main>
   );
 }
